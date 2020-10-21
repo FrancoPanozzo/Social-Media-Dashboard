@@ -3,6 +3,7 @@
 # dependencies
 /design
 /node_modules
+/src/App.css
 /.pnp
 .pnp.js
 
