@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
+import Container from './components/Container';
 
 function App() {
-  return <div>It works</div>;
+  return <Container>It works</Container>;
 }
 
 export default App;
