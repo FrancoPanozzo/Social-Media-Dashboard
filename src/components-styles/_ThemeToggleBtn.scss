@@ -1,0 +1,64 @@
+// Base styles
+.themeToggleBtn {
+  color: var(--muted-text);
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: all 0.1s ease-in-out;
+
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & .pill {
+    display: flex;
+    align-items: center;
+    margin-left: 0.75em;
+    width: 2.3em;
+    padding: 0.1em;
+    border-radius: 1.15em;
+    border: none;
+  }
+
+  & .circle {
+    background-color: var(--main-bg);
+    height: 1.15em;
+    width: 1.15em;
+    border-radius: 1.15em;
+  }
+}
+
+// Dark theme state
+.themeToggleBtn.dark {
+  & .pill {
+    justify-content: flex-start;
+    background: var(--dark-theme-toggle-gradient);
+  }
+
+  &:hover {
+    color: var(--regular-text);
+
+    & .circle {
+      background-color: var(--card-bg);
+    }
+  }
+}
+
+// Light theme state
+.themeToggleBtn.light {
+  & .pill {
+    justify-content: flex-end;
+    background: var(--light-theme-toggle-color);
+  }
+
+  &:hover .pill {
+    background: var(--dark-theme-toggle-gradient);
+  }
+}

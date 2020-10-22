@@ -1,0 +1,13 @@
+.mainHeading {
+  font-size: 0.9em;
+  text-transform: capitalize;
+
+  & h1 {
+    margin-bottom: 0.25em;
+  }
+
+  & span {
+    font-weight: bold;
+    color: var(--muted-text);
+  }
+}

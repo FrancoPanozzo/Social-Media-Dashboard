@@ -17,9 +17,7 @@
   --YouTube-color: hsl(348, 97%, 39%);
 
   // theme toggles
-  --dark-theme-toggle-gradient: linear-gradient(
-    hsl(210, 78%, 56%) to hsl(146, 68%, 55%)
-  );
+  --dark-theme-toggle-gradient: linear-gradient(90deg, #378fe6, #3eda82);
   --light-theme-toggle-color: hsl(230, 22%, 74%);
 
   // themes
@@ -44,6 +42,15 @@
   --desktop-breakpoint: 1440px;
 }
 
+// --Basic reset--
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 // --Global styles--
 body {
   font-family: var(--main-ff);
@@ -57,10 +64,13 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 33vh;
+    height: 35vh;
     background-color: var(--top-bg);
   }
 }
 
 // --Components styles--
 @import 'components-styles/Container';
+@import 'components-styles/Header';
+@import 'components-styles/ThemeToggleBtn';
+@import 'components-styles/MainHeading';
