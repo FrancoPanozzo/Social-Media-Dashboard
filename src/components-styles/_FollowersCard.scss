@@ -1,0 +1,94 @@
+// Base styles
+.followersCard {
+  background-color: var(--card-bg);
+  color: var(--muted-text);
+  overflow: hidden;
+  border-radius: var(--borders);
+
+  & .topBar {
+    height: 4px;
+    background-color: var(--card-bg);
+  }
+
+  &__Body {
+    margin: 1.5rem;
+  }
+
+  & .userInfo {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: var(--regular-text);
+    }
+    & span {
+      margin-left: 0.5rem;
+      font-weight: bold;
+      font-size: 0.7em;
+    }
+  }
+
+  & .followersNumber {
+    color: var(--regular-text);
+    font-size: 3em;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  & .followersText {
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    font-size: 0.7em;
+    letter-spacing: 0.3em;
+    margin-bottom: 1.5rem;
+  }
+
+  & .followersDelta {
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & span {
+      margin-left: 0.5em;
+    }
+
+    &.negative {
+      color: var(--danger-color);
+    }
+
+    &.positive {
+      color: var(--success-color);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Styles for the top bar based on the social media
+.followersCard {
+  &.facebook .topBar {
+    background: var(--Facebook-color);
+  }
+  &.twitter .topBar {
+    background: var(--Twitter-color);
+  }
+  &.instagram .topBar {
+    background: var(--Instagram-gradient);
+  }
+  &.youtube .topBar {
+    background-color: var(--YouTube-color);
+  }
+}
