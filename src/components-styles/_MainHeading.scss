@@ -1,13 +1,23 @@
 .mainHeading {
-  font-size: 0.9em;
   text-transform: capitalize;
+  white-space: nowrap;
 
   & h1 {
     margin-bottom: 0.25em;
+
+    @media screen and (max-width: 550px) {
+      font-size: 1.7em;
+    }
   }
 
   & span {
     font-weight: bold;
     color: var(--muted-text);
+  }
+
+  @media screen and (max-width: 550px) {
+    border-bottom: 1px solid var(--muted-text);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
