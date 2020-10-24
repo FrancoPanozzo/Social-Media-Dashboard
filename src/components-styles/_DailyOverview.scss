@@ -1,0 +1,15 @@
+.dailyOverview {
+  margin: 2rem 0;
+
+  & h2 {
+    margin-bottom: 1rem;
+  }
+
+  & .cardsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+  }
+}

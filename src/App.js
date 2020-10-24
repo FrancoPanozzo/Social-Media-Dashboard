@@ -5,6 +5,7 @@ import Header from './components/Header';
 import ThemeToggleBtn from './components/ThemeToggleBtn';
 import MainHeading from './components/MainHeading';
 import FollowersCardsList from './components/FollowersCardsList';
+import DailyOverview from './components/DailyOverview';
 
 function App() {
   return (
@@ -13,7 +14,10 @@ function App() {
         <MainHeading />
         <ThemeToggleBtn />
       </Header>
+
       <FollowersCardsList />
+
+      <DailyOverview />
     </Container>
   );
 }

@@ -9,28 +9,28 @@ export default function FollowersCardsList() {
         user="@franks"
         userLink="facebook.com"
         followers="1987"
-        followersDailyDelta={-12}
+        followersDailyDelta={12}
       />
       <FollowersCard
         socialMedia="twitter"
         user="@franks"
         userLink="twitter.com"
-        followers="1002"
-        followersDailyDelta={122}
+        followers="1044"
+        followersDailyDelta={99}
       />
       <FollowersCard
         socialMedia="instagram"
         user="@franks"
         userLink="instagram.com"
-        followers="2311"
-        followersDailyDelta={-8}
+        followers={11000}
+        followersDailyDelta={1099}
       />
       <FollowersCard
         socialMedia="youtube"
         user="Frank"
         userLink="twitter.com"
-        followers="8123"
-        followersDailyDelta={19}
+        followers="8239"
+        followersDailyDelta={-144}
       />
     </section>
   );

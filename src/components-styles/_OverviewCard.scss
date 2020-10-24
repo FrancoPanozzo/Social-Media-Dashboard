@@ -1,0 +1,55 @@
+.overviewCard {
+  background-color: var(--card-bg);
+  border-radius: var(--borders);
+  padding: 1.5rem;
+
+  & .first-row,
+  & .second-row {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  & .first-row {
+    margin-bottom: 1rem;
+    color: var(--muted-text);
+    text-transform: capitalize;
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+
+  & .second-row {
+    color: var(--regular-text);
+
+    & > span {
+      font-size: 2em;
+      font-weight: bold;
+      align-self: flex-end;
+      margin-right: 1.5rem;
+    }
+
+    & .dailyDeltaPercent {
+      align-self: flex-end;
+      font-size: 0.6em;
+      font-weight: bold;
+      text-transform: capitalize;
+      text-align: center;
+      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & span {
+        margin-left: 0.25em;
+      }
+
+      &.negative {
+        color: var(--danger-color);
+      }
+
+      &.positive {
+        color: var(--success-color);
+      }
+    }
+  }
+}

@@ -50,6 +50,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  line-height: 1.2;
   transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
 }
 
@@ -78,3 +79,5 @@ body {
 @import 'components-styles/MainHeading';
 @import 'components-styles/FollowersCardsList';
 @import 'components-styles/FollowersCard';
+@import 'components-styles/DailyOverview';
+@import 'components-styles/OverviewCard';
