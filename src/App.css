@@ -42,7 +42,7 @@ body::before { content: ''; position: absolute; z-index: -1; top: 0; left: 0; ri
 
 .mainHeading h1 { margin-bottom: 0.25em; }
 
-@media screen and (max-width: 550px) { .mainHeading h1 { font-size: 1.7em; } }
+@media screen and (max-width: 400px) { .mainHeading h1 { font-size: 1.7em; } }
 
 .mainHeading span { font-weight: bold; color: var(--muted-text); }
 
@@ -50,9 +50,9 @@ body::before { content: ''; position: absolute; z-index: -1; top: 0; left: 0; ri
 
 .followersCardsList { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); -webkit-column-gap: 1.5rem; column-gap: 1.5rem; }
 
-@media screen and (max-width: 800px) { .followersCardsList { -ms-grid-columns: (1fr)[2]; grid-template-columns: repeat(2, 1fr); grid-template-columns: repeat(2, 1fr); gap: 1rem; } }
+@media screen and (max-width: 1050px) { .followersCardsList { -ms-grid-columns: (1fr)[2]; grid-template-columns: repeat(2, 1fr); gap: 1rem; } }
 
-@media screen and (max-width: 400px) { .followersCardsList { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; } }
+@media screen and (max-width: 550px) { .followersCardsList { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; } }
 
 .followersCard { background-color: var(--card-bg); color: var(--muted-text); overflow: hidden; border-radius: var(--borders); }
 
@@ -92,7 +92,13 @@ body::before { content: ''; position: absolute; z-index: -1; top: 0; left: 0; ri
 
 .dailyOverview h2 { margin-bottom: 1rem; }
 
-.dailyOverview .cardsList { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); -ms-grid-rows: (1fr)[2]; grid-template-rows: repeat(2, 1fr); -webkit-column-gap: 1.5rem; column-gap: 1.5rem; row-gap: 1rem; }
+@media screen and (max-width: 400px) { .dailyOverview h2 { font-size: 1.25em; } }
+
+.dailyOverview .cardsList { display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); -webkit-column-gap: 1.5rem; column-gap: 1.5rem; row-gap: 1rem; }
+
+@media screen and (max-width: 1050px) { .dailyOverview .cardsList { -ms-grid-columns: (1fr)[2]; grid-template-columns: repeat(2, 1fr); gap: 1rem; } }
+
+@media screen and (max-width: 550px) { .dailyOverview .cardsList { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; } }
 
 .overviewCard { background-color: var(--card-bg); border-radius: var(--borders); padding: 1.5rem; }
 
@@ -102,7 +108,7 @@ body::before { content: ''; position: absolute; z-index: -1; top: 0; left: 0; ri
 
 .overviewCard .second-row { color: var(--regular-text); }
 
-.overviewCard .second-row > span { font-size: 2em; font-weight: bold; -ms-flex-item-align: end; align-self: flex-end; margin-right: 1.5rem; }
+.overviewCard .second-row > span { font-size: 2em; font-weight: bold; -ms-flex-item-align: end; align-self: flex-end; margin-right: 0.5rem; }
 
 .overviewCard .second-row .dailyDeltaPercent { -ms-flex-item-align: end; align-self: flex-end; font-size: 0.6em; font-weight: bold; text-transform: capitalize; text-align: center; white-space: nowrap; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 

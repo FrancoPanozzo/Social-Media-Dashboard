@@ -1,14 +1,14 @@
 .followersCardsList {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
   column-gap: 1.5rem;
 
-  @media screen and (max-width: 800px) {
-    grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 1050px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 550px) {
     display: flex;
     flex-flow: column nowrap;
   }
