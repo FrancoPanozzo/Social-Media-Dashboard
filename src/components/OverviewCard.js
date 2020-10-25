@@ -1,4 +1,5 @@
 import React from 'react';
+import formatNumber from '../utils/formatNumber';
 
 export default function OverviewCard({
   title,
@@ -21,7 +22,7 @@ export default function OverviewCard({
       </div>
 
       <div className="second-row">
-        <span>{value}</span>
+        <span>{formatNumber(value)}</span>
         <div
           className={`dailyDeltaPercent ${
             deltaBoolean ? 'positive' : 'negative'

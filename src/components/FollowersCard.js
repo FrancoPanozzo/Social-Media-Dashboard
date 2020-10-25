@@ -1,4 +1,5 @@
 import React from 'react';
+import formatNumber from '../utils/formatNumber';
 
 export default function FollowersCard({
   socialMedia,
@@ -24,7 +25,7 @@ export default function FollowersCard({
           <span>{user}</span>
         </a>
 
-        <span className="followersNumber">{followers}</span>
+        <span className="followersNumber">{formatNumber(followers)}</span>
 
         <span className="followersText">
           {socialMedia === 'youtube' ? 'subscribers' : 'followers'}
@@ -34,7 +35,7 @@ export default function FollowersCard({
           className={`followersDelta ${deltaBoolean ? 'positive' : 'negative'}`}
         >
           <img src={arrowImg} alt="Arrow icon" />
-          <span>{Math.abs(followersDailyDelta)} today</span>
+          <span>{formatNumber(Math.abs(followersDailyDelta))} today</span>
         </div>
       </div>
     </article>
