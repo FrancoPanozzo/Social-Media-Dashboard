@@ -3,6 +3,10 @@
   border-radius: var(--borders);
   padding: 1.5rem;
 
+  @media screen and (max-width: 550px) {
+    margin-bottom: 1rem;
+  }
+
   & .first-row,
   & .second-row {
     display: flex;

@@ -11,5 +11,6 @@
   @media screen and (max-width: 550px) {
     display: flex;
     flex-flow: column nowrap;
+    gap: 0;
   }
 }

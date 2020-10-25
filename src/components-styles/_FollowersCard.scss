@@ -5,6 +5,10 @@
   overflow: hidden;
   border-radius: var(--borders);
 
+  @media screen and (max-width: 550px) {
+    margin-bottom: 1rem;
+  }
+
   & .topBar {
     height: 4px;
     background-color: var(--card-bg);
